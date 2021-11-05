@@ -1,0 +1,6 @@
+framework module Pods_ClipWithUIBezierPath {
+  umbrella header "Pods-ClipWithUIBezierPath-umbrella.h"
+
+  export *
+  module * { export * }
+}

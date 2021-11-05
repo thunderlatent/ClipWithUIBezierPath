@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		5385C1F7272661B100C88FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5385C1F5272661B100C88FE0 /* Main.storyboard */; };
 		5385C1F9272661B600C88FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5385C1F8272661B600C88FE0 /* Assets.xcassets */; };
 		5385C1FC272661B600C88FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5385C1FA272661B600C88FE0 /* LaunchScreen.storyboard */; };
+		5385C20427266B6200C88FE0 /* ClipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385C20327266B6200C88FE0 /* ClipImageView.swift */; };
+		5385C2062727F62300C88FE0 /* UIImagee+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385C2052727F62300C88FE0 /* UIImagee+AverageColor.swift */; };
+		53CB564A2731143900CA1F8D /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 53CB56492731143900CA1F8D /* SwiftImage */; };
+		53CB564C2732811E00CA1F8D /* RGBToHSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CB564B2732811E00CA1F8D /* RGBToHSV.swift */; };
+		CF0A11583C465059C9C687FB /* Pods_ClipWithUIBezierPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE9F85232D7A069A7B59B1 /* Pods_ClipWithUIBezierPath.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34BE9F85232D7A069A7B59B1 /* Pods_ClipWithUIBezierPath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipWithUIBezierPath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D485C457EA1D1B75DA8ABC9 /* Pods-ClipWithUIBezierPath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipWithUIBezierPath.debug.xcconfig"; path = "Target Support Files/Pods-ClipWithUIBezierPath/Pods-ClipWithUIBezierPath.debug.xcconfig"; sourceTree = "<group>"; };
 		5385C1EC272661B100C88FE0 /* ClipWithUIBezierPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipWithUIBezierPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5385C1EF272661B100C88FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5385C1F1272661B100C88FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,10 @@
 		5385C1F8272661B600C88FE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5385C1FB272661B600C88FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5385C1FD272661B600C88FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5385C20327266B6200C88FE0 /* ClipImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipImageView.swift; sourceTree = "<group>"; };
+		5385C2052727F62300C88FE0 /* UIImagee+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagee+AverageColor.swift"; sourceTree = "<group>"; };
+		53CB564B2732811E00CA1F8D /* RGBToHSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBToHSV.swift; sourceTree = "<group>"; };
+		9E867B223774B99438671027 /* Pods-ClipWithUIBezierPath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipWithUIBezierPath.release.xcconfig"; path = "Target Support Files/Pods-ClipWithUIBezierPath/Pods-ClipWithUIBezierPath.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CB564A2731143900CA1F8D /* SwiftImage in Frameworks */,
+				CF0A11583C465059C9C687FB /* Pods_ClipWithUIBezierPath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4744F8FB2507B02571372474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BE9F85232D7A069A7B59B1 /* Pods_ClipWithUIBezierPath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5385C1E3272661B000C88FE0 = {
 			isa = PBXGroup;
 			children = (
 				5385C1EE272661B100C88FE0 /* ClipWithUIBezierPath */,
 				5385C1ED272661B100C88FE0 /* Products */,
+				DC1CB7CB1C3DF70E1442FA1C /* Pods */,
+				4744F8FB2507B02571372474 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +82,24 @@
 				5385C1EF272661B100C88FE0 /* AppDelegate.swift */,
 				5385C1F1272661B100C88FE0 /* SceneDelegate.swift */,
 				5385C1F3272661B100C88FE0 /* ViewController.swift */,
+				5385C20327266B6200C88FE0 /* ClipImageView.swift */,
 				5385C1F5272661B100C88FE0 /* Main.storyboard */,
 				5385C1F8272661B600C88FE0 /* Assets.xcassets */,
 				5385C1FA272661B600C88FE0 /* LaunchScreen.storyboard */,
 				5385C1FD272661B600C88FE0 /* Info.plist */,
+				5385C2052727F62300C88FE0 /* UIImagee+AverageColor.swift */,
+				53CB564B2732811E00CA1F8D /* RGBToHSV.swift */,
 			);
 			path = ClipWithUIBezierPath;
+			sourceTree = "<group>";
+		};
+		DC1CB7CB1C3DF70E1442FA1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D485C457EA1D1B75DA8ABC9 /* Pods-ClipWithUIBezierPath.debug.xcconfig */,
+				9E867B223774B99438671027 /* Pods-ClipWithUIBezierPath.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5385C200272661B600C88FE0 /* Build configuration list for PBXNativeTarget "ClipWithUIBezierPath" */;
 			buildPhases = (
+				4062F18AB9F1E72DBFCD70CB /* [CP] Check Pods Manifest.lock */,
 				5385C1E8272661B000C88FE0 /* Sources */,
 				5385C1E9272661B000C88FE0 /* Frameworks */,
 				5385C1EA272661B000C88FE0 /* Resources */,
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = ClipWithUIBezierPath;
+			packageProductDependencies = (
+				53CB56492731143900CA1F8D /* SwiftImage */,
+			);
 			productName = ClipWithUIBezierPath;
 			productReference = 5385C1EC272661B100C88FE0 /* ClipWithUIBezierPath.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 5385C1E3272661B000C88FE0;
+			packageReferences = (
+				53CB56482731143900CA1F8D /* XCRemoteSwiftPackageReference "swift-image" */,
+			);
 			productRefGroup = 5385C1ED272661B100C88FE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,13 +174,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4062F18AB9F1E72DBFCD70CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClipWithUIBezierPath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5385C1E8272661B000C88FE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5385C20427266B6200C88FE0 /* ClipImageView.swift in Sources */,
+				5385C2062727F62300C88FE0 /* UIImagee+AverageColor.swift in Sources */,
 				5385C1F4272661B100C88FE0 /* ViewController.swift in Sources */,
 				5385C1F0272661B100C88FE0 /* AppDelegate.swift in Sources */,
+				53CB564C2732811E00CA1F8D /* RGBToHSV.swift in Sources */,
 				5385C1F2272661B100C88FE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +353,7 @@
 		};
 		5385C201272661B600C88FE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D485C457EA1D1B75DA8ABC9 /* Pods-ClipWithUIBezierPath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +373,7 @@
 		};
 		5385C202272661B600C88FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E867B223774B99438671027 /* Pods-ClipWithUIBezierPath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53CB56482731143900CA1F8D /* XCRemoteSwiftPackageReference "swift-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/koher/swift-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53CB56492731143900CA1F8D /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53CB56482731143900CA1F8D /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5385C1E4272661B000C88FE0 /* Project object */;
 }
